@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card" style="width: 18rem;">
+    <div class="card mx-auto" style="width: 18rem;">
         <div class="card-body text-center">
           <h5 class="card-title">App de gastos</h5>
           <p class="card-text">Ingresa cuánto pagó cada persona</p>
@@ -22,7 +22,7 @@
             <form id="form">
             <input type="text" name="nombre" id="nombre">
             <input type="number" name="precio" id="precio">
-            <button type="submit" class="btn btn-danger" onclick="addLi(nombre,precio)">Enviar</button>
+            <button style="margin: 10px;" type="submit" class="btn btn-danger" onclick="addLi(nombre,precio)">Enviar</button>
             </form>
 
             <ul class="list-group" id="list">
@@ -30,8 +30,8 @@
               </ul>
         </div>
         <div>
-            <p id="total"></p>
-            <p id="aportes"></p>
+            <p style="margin: 10px;" id="total"></p>
+            <p style="margin: 10px;" id="aportes"></p>
 
 
         </div>
