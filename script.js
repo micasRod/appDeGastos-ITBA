@@ -1,18 +1,14 @@
-var personas=[];
-var gastos=[];
-
-
-function total(gastos){
-    
-    for (let i of gastos){
-        let total=total+i;
-    }
-
-    return total;
-
+var form=document.getElementById("form");
+var ul=document.getElementById("list");
+function addLi(){
+    var nom=document.getElementById("nombre").value;
+    var pre=document.getElementById("precio").value;
+    form.addEventListener("submit",function(e){
+        e.preventDefault();
+        var li=document.createElement("li");
+        li.className="list-group-item";
+        li.appendChild(document.createTextNode(nom+": $"+pre))
+        ul.appendChild(li);
+    }) 
 }
 
-function aporte(total,personas){
-
-    return total/personas.lenth;
-}
